@@ -23,7 +23,8 @@ for n in range(num):
     text = page.extractText()
     content = content + text
 
-engine.save_to_file(content, 'audiobook.mp3')           # output audiobook name 
+engine.say(content)                                     # Read out the pdf loud
+engine.save_to_file(content, 'audiobook.mp3')           # save as a mp3 file 
 engine.runAndWait()
 
 
