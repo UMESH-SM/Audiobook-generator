@@ -8,7 +8,7 @@ voices = engine.getProperty('voices')
 engine.setProperty('voice', voices[1].id)           # female voice
 
 try:
-    book = open('filename.pdf',mode='rb')           # input pdf name
+    book = open('path to file/filename.pdf',mode='rb')           # specify filename and path
     pdfReader = PyPDF2.PdfFileReader(book)
     
 except:
